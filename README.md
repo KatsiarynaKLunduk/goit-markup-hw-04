@@ -1,1 +1,1 @@
-https://github.com/KatsiarynaKLunduk/goit-markup-hw-03.git
+https://katsiarynaklunduk.github.io/goit-markup-hw-04/
