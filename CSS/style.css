@@ -1,0 +1,307 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  background-color: var(--white-color);
+  margin: 0;
+  display: block;
+}
+section {
+  display: block;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --brand-color-gray: #757575;
+  --brand-color-dark-gray: #2f303a;
+  --brand-color-blue: #2196f3;
+  --brand-color-beige: #e5e5e5;
+  --brand-color-white: #ffffff;
+  --brand-color-black: #212121;
+  --brand-color-light-gray: #f5f4fa;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  border: 1px solid transparent;
+  padding: 24px 0 25px;
+}
+.menu-first {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.1923;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--brand-color-black);
+  margin-right: 93px;
+  text-align: left;
+}
+.link:hover,
+.link:focus {
+  color: var(--brand-color-blue);
+}
+.logo-web {
+  color: var(--brand-color-blue);
+  text-decoration: none;
+}
+.logo-studio {
+  color: var(--brand-color-white);
+  text-decoration: none;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  gap: 30px;
+}
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 46px;
+}
+.link {
+  color: var(--brand-color-black);
+  text-decoration: none;
+  cursor: pointer;
+}
+.link:hover,
+.link:focus {
+  color: var(--brand-color-blue);
+}
+.adress {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--brand-color-gray);
+  text-align: left;
+}
+.adress-mail {
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 50px;
+  color: var(--brand-color-gray);
+}
+.adress-mail:hover,
+.adress-mail:focus {
+  color: var(--brand-color-blue);
+}
+.adress-number {
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--brand-color-gray);
+}
+.adress-number:hover,
+.adress-number:focus {
+  color: var(--brand-color-blue);
+}
+.title {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  border: 1px solid transparent;
+  background: var(--brand-color-dark-gray);
+}
+.title-text {
+  max-width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3636;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--brand-color-white);
+  margin: auto;
+  letter-spacing: 0.06em;
+}
+.title-button {
+  background: var(--brand-color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.875;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--brand-color-white);
+  cursor: pointer;
+  border-style: none;
+  padding: 10px 41px;
+  margin-top: 30px;
+}
+.advantages {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  display: flex;
+  gap: 30px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages-title {
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--brand-color-black);
+}
+.advantages-text {
+  line-height: 1.714;
+  color: var(--brand-color-gray);
+}
+.direction {
+  padding-bottom: 94px;
+}
+.direction-title {
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.direction-images {
+  display: flex;
+  mix-blend-mode: normal;
+}
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--brand-color-light-gray);
+}
+.team-title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--brand-color-black);
+}
+.team-profile {
+  background-color: var(--brand-color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-name {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--brand-color-black);
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.team-job {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--brand-color-gray);
+  padding-bottom: 30px;
+}
+.adress-office {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--brand-color-white);
+}
+.footer-bottom {
+  background: var(--brand-color-dark-gray);
+  padding: 60px 0;
+}
+.footer-logo {
+  margin: 0;
+}
+.adress-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: inline-block;
+  line-height: 1.714;
+}
+.portfolio {
+  padding: 94px 0;
+  background-color: var(--brand-color-white);
+}
+.navigation {
+  display: flex;
+}
+.navigation-list {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.button-navigation {
+  font-family: inherit;
+  font-weight: 500;
+  width: 93px;
+  height: 38px;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  color: var(--brand-color-black);
+  background-color: var(--brand-color-light-gray);
+  border-radius: 4px;
+  cursor: pointer;
+  border-style: none;
+}
+.button-navigation:hover,
+.button-navigation:focus {
+  color: var(--brand-color-white);
+  background: var(--brand-color-blue);
+}
+.portfolio-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  margin-top: 50px;
+}
+.portfolio-images {
+  background-color: var(--brand-color-white);
+  border-radius: 0px 0px 4px 4px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+.portfolio-project {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--brand-color-black);
+  padding-left: 24px;
+}
+.portfolio-project-title {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--brand-color-gray);
+  padding-left: 24px;
+}
