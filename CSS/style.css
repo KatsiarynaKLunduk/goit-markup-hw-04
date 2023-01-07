@@ -13,6 +13,9 @@ li {
   margin: 0;
   padding: 0;
 }
+svg:not(:root) {
+  overflow: hidden;
+}
 :root {
   --brand-color-gray: #757575;
   --brand-color-dark-gray: #2f303a;
@@ -93,6 +96,10 @@ li {
 .link:hover,
 .link:focus {
   color: var(--brand-color-blue);
+}
+.menu-second {
+  fill: currentColor;
+  margin-left: -22px;
 }
 .adress {
   display: flex;
