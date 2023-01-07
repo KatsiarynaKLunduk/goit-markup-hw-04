@@ -12,6 +12,7 @@ ul,
 li {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -97,6 +98,15 @@ svg:not(:root) {
 .link:focus {
   color: var(--brand-color-blue);
 }
+.menu-list-adress {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.menu-adress {
+  fill: currentColor;
+  margin-left: -22px;
+}
 .adress {
   display: flex;
   justify-content: space-between;
@@ -112,6 +122,8 @@ svg:not(:root) {
   cursor: pointer;
   margin-right: 50px;
   color: var(--brand-color-gray);
+  align-items: center;
+  justify-content: center;
 }
 .adress-mail:hover,
 .adress-mail:focus {
@@ -129,6 +141,8 @@ svg:not(:root) {
 }
 .adress-icon {
   margin-right: 10px;
+  align-items: center;
+  justify-content: center;
 }
 .title {
   text-align: center;
@@ -142,6 +156,8 @@ svg:not(:root) {
       rgba(47, 48, 58, 0.4) 0%
     ),
     url(../images/img.tlo.jpg);
+  background-size: 1600px 600px;
+  background-repeat: no-repeat;
 }
 .title-text {
   max-width: 696px;
