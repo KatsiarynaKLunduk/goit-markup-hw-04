@@ -97,10 +97,6 @@ svg:not(:root) {
 .link:focus {
   color: var(--brand-color-blue);
 }
-.menu-second {
-  fill: currentColor;
-  margin-left: -22px;
-}
 .adress {
   display: flex;
   justify-content: space-between;
