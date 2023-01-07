@@ -25,6 +25,7 @@ svg:not(:root) {
   --brand-color-white: #ffffff;
   --brand-color-black: #212121;
   --brand-color-light-gray: #f5f4fa;
+  --brand-color-half-light-gray: #afb1b8;
 }
 *,
 *::before,
@@ -88,6 +89,7 @@ svg:not(:root) {
   margin: 0;
   padding: 0;
   gap: 46px;
+  font-weight: 500;
 }
 .link {
   color: var(--brand-color-black);
@@ -112,6 +114,7 @@ svg:not(:root) {
   text-align: left;
   fill: currentColor;
   margin-left: -22px;
+  font-weight: 500;
 }
 .adress-mail {
   display: flex;
@@ -258,6 +261,42 @@ svg:not(:root) {
   text-align: center;
   color: var(--brand-color-gray);
   padding-bottom: 30px;
+}
+.team-social-media {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.team-social-media-link {
+}
+.social-media-icon {
+  fill: var(--brand-color-half-light-gray);
+  display: block;
+}
+.customer-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-left: -27px;
+  cursor: pointer;
+  padding: 94px;
+}
+.customer-logo {
+  border: 1px solid var(--brand-color-half-light-gray);
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customer-logo-icon {
+  color: var(--brand-color-half-light-gray);
 }
 .adress-office {
   font-size: 14px;
