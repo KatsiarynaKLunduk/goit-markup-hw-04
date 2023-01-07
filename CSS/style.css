@@ -98,14 +98,9 @@ svg:not(:root) {
 .link:focus {
   color: var(--brand-color-blue);
 }
-.menu-list-adress {
+.menu-adress {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
-}
-.menu-adress {
-  fill: currentColor;
-  margin-left: -22px;
 }
 .adress {
   display: flex;
@@ -115,6 +110,8 @@ svg:not(:root) {
   letter-spacing: 0.03em;
   color: var(--brand-color-gray);
   text-align: left;
+  fill: currentColor;
+  margin-left: -22px;
 }
 .adress-mail {
   display: flex;
@@ -147,7 +144,7 @@ svg:not(:root) {
 .title {
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   border: 1px solid transparent;
   background: var(--brand-color-dark-gray);
   background-image: linear-gradient(
