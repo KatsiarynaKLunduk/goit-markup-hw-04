@@ -271,11 +271,21 @@ svg:not(:root) {
   padding-right: 32px;
   padding-left: 32px;
 }
-.team-social-media-link {
-}
 .social-media-icon {
-  fill: var(--brand-color-half-light-gray);
+  color: var(--brand-color-half-light-gray);
   display: block;
+}
+.customer-title {
+  text-align: center;
+  padding: 94px 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand-color-black);
+  margin: auto;
 }
 .customer-list {
   list-style-type: none;
@@ -283,14 +293,11 @@ svg:not(:root) {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  margin-left: -27px;
   cursor: pointer;
-  padding: 94px;
 }
 .customer-logo {
   border: 1px solid var(--brand-color-half-light-gray);
-  width: 170px;
-  height: 92px;
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
