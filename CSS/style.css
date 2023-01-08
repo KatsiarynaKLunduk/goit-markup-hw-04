@@ -64,10 +64,6 @@ svg:not(:root) {
   margin-right: 93px;
   text-align: left;
 }
-.link:hover,
-.link:focus {
-  color: var(--brand-color-blue);
-}
 .logo-web {
   color: var(--brand-color-blue);
   text-decoration: none;
@@ -134,6 +130,8 @@ svg:not(:root) {
   text-decoration: none;
   cursor: pointer;
   color: var(--brand-color-gray);
+  align-items: center;
+  justify-content: center;
 }
 .adress-number:hover,
 .adress-number:focus {
@@ -265,12 +263,18 @@ svg:not(:root) {
   display: flex;
   gap: 10px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-top: 16px 32px 30px;
+  cursor: pointer;
+  border-radius: 50%;
 }
 .social-media-icon {
-  color: var(--brand-color-half-light-gray);
+  fill: var(--brand-color-half-light-gray);
   display: block;
+}
+.social-media-icon:hover,
+.social-media-icon:focus {
+  color: var(--brand-color-blue);
 }
 .customer-title {
   text-align: center;
