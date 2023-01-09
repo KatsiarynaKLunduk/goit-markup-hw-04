@@ -306,9 +306,12 @@ svg:not(:root) {
   border-radius: 4px;
   cursor: pointer;
   align-items: center;
+  justify-content: center;
+  display: flex;
 }
 .customer-logo-icon {
   fill: var(--brand-color-half-light-gray);
+  margin: 16px 32px;
 }
 .customer-logo:hover,
 .customer-logo:focus {
