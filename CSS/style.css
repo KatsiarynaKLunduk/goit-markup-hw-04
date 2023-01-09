@@ -9,7 +9,9 @@ section {
   display: block;
 }
 ul,
-li {
+li,
+svg,
+a {
   margin: 0;
   padding: 0;
   border: 0;
@@ -26,6 +28,7 @@ svg:not(:root) {
   --brand-color-black: #212121;
   --brand-color-light-gray: #f5f4fa;
   --brand-color-half-light-gray: #afb1b8;
+  --brand-color-second-dark-gray: rgba(255, 255, 255, 0.1);
 }
 *,
 *::before,
@@ -109,17 +112,15 @@ svg:not(:root) {
   color: var(--brand-color-gray);
   text-align: left;
   fill: currentColor;
-  margin-left: -22px;
   font-weight: 500;
 }
 .adress-mail {
   display: flex;
   text-decoration: none;
   cursor: pointer;
-  margin-right: 50px;
+  margin-right: 30px;
   color: var(--brand-color-gray);
   align-items: center;
-  justify-content: center;
 }
 .adress-mail:hover,
 .adress-mail:focus {
@@ -131,7 +132,7 @@ svg:not(:root) {
   cursor: pointer;
   color: var(--brand-color-gray);
   align-items: center;
-  justify-content: center;
+  text-align: left;
 }
 .adress-number:hover,
 .adress-number:focus {
@@ -264,66 +265,120 @@ svg:not(:root) {
   gap: 10px;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 16px 32px 30px;
   cursor: pointer;
+  padding: 16px 32px 30px;
   border-radius: 50%;
 }
 .social-media-icon {
   fill: var(--brand-color-half-light-gray);
   display: block;
+  background: var(--brand-color-white);
 }
 .social-media-icon:hover,
 .social-media-icon:focus {
-  color: var(--brand-color-blue);
+  fill: var(--brand-color-white);
+  background: var(--brand-color-blue);
+  border-radius: 50%;
+}
+.customer-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .customer-title {
   text-align: center;
-  padding: 94px 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1667;
-  text-align: center;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--brand-color-black);
-  margin: auto;
+  margin-bottom: 50px;
 }
 .customer-list {
   list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 .customer-logo {
   border: 1px solid var(--brand-color-half-light-gray);
-  margin-top: 50px;
-  display: flex;
+  border-radius: 4px;
+  cursor: pointer;
   align-items: center;
-  justify-content: center;
 }
 .customer-logo-icon {
-  color: var(--brand-color-half-light-gray);
+  fill: var(--brand-color-half-light-gray);
 }
-.adress-office {
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: var(--brand-color-white);
+.customer-logo:hover,
+.customer-logo:focus {
+  border: 1px solid var(--brand-color-blue);
+}
+.customer-logo-icon:hover,
+.customer-logo-icon:focus {
+  fill: var(--brand-color-blue);
 }
 .footer-bottom {
   background: var(--brand-color-dark-gray);
   padding: 60px 0;
+  display: flex;
+}
+.footer-flex {
+  display: flex;
+  align-content: center;
+  gap: 70px;
 }
 .footer-logo {
-  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 0;
 }
 .adress-list {
   list-style-type: none;
-  padding-left: 0;
-  display: inline-block;
   line-height: 1.714;
+}
+.adress-list-item {
+  padding-left: 0;
+}
+.adress-office {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--brand-color-white);
+  margin-top: 20px;
+}
+.footer-social-media-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand-color-white);
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+.footer-social-media {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+}
+.footer-social-media-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--brand-color-second-dark-gray);
+}
+.footer-social-media-icon {
+  fill: var(--brand-color-white);
+}
+.footer-social-media-icon:hover,
+.footer-social-media-icon:focus {
+  background: var(--brand-color-blue);
+  border-radius: 50%;
 }
 .portfolio {
   padding: 94px 0;
@@ -364,6 +419,11 @@ svg:not(:root) {
   gap: 30px;
   list-style: none;
   margin-top: 50px;
+}
+.portfolio-box-item:hover,
+.portfolio-box-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-images {
   background-color: var(--brand-color-white);
